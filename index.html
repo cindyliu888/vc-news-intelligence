@@ -1147,6 +1147,84 @@ pre.memo{white-space:pre-wrap;font-family:var(--mono,ui-monospace,monospace);fon
 .reuse-banner{display:flex;gap:8px;align-items:flex-start;padding:10px 12px;border-radius:10px;background:#F5F3FF;border:1px solid #DDD6FE;color:#5B21B6;font-size:13.5px}
 :root[data-theme="dark"] .reuse-banner{background:rgba(124,58,237,.12);border-color:rgba(167,139,250,.3);color:#DDD6FE}
 .reuse-banner svg{width:16px;height:16px;flex:none;margin-top:2px}
+
+.vledger,.vvideo{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:var(--surface)}
+.vclaim{border:1px solid var(--line);border-radius:10px;margin-top:8px;background:var(--surface)}
+.vclaim summary{list-style:none;cursor:pointer;padding:10px 12px}
+.vclaim summary::-webkit-details-marker{display:none}
+.vclaim[open] summary{border-bottom:1px solid var(--line)}
+.vclaim.conflict{border-left:3px solid #EF4444}.vclaim.amplified{border-left:3px solid #8B5CF6}.vclaim.nosource{border-left:3px solid #94A3B8}.vclaim.confirmed{border-left:3px solid #16A34A}.vclaim.company,.vclaim.single{border-left:3px solid #F59E0B}
+.vclaim{border-radius:0 10px 10px 0}
+.vc-top{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.vc-claim{font-size:14.5px;font-weight:600;margin:6px 0 2px}
+.vc-body{padding:10px 12px 12px}
+.vc-orig,.vc-mut{margin:0;padding:8px 10px;border-radius:8px;background:var(--surface-2);font-size:13.5px;line-height:1.6}
+.vc-mut del{background:#FEE2E2;color:#991B1B;text-decoration:line-through;border-radius:3px;padding:0 2px}
+.vc-mut ins{background:#DCFCE7;color:#166534;text-decoration:none;border-radius:3px;padding:0 2px}
+:root[data-theme="dark"] .vc-mut del{background:rgba(239,68,68,.2);color:#FCA5A5}
+:root[data-theme="dark"] .vc-mut ins{background:rgba(34,197,94,.2);color:#86EFAC}
+.vc-trace{margin:4px 0 0;padding-left:18px;font-size:13px;display:flex;flex-direction:column;gap:4px}
+.demo-in{display:inline-flex;align-items:center;gap:4px;font-size:11.5px;padding:1px 8px;border-radius:999px;background:#FEF3C7;color:#92400E;border:1px solid #FDE68A}
+:root[data-theme="dark"] .demo-in{background:rgba(245,158,11,.15);color:#FCD34D;border-color:rgba(245,158,11,.35)}
+.demo-in svg{width:12px;height:12px}
+.vv-head{display:flex;gap:12px;align-items:flex-start}
+.vv-thumb{width:120px;height:72px;border-radius:8px;background:#0F172A;color:#fff;display:grid;place-items:center;position:relative;flex:none}
+.vv-thumb svg{width:26px;height:26px}
+.vv-thumb span{position:absolute;right:6px;bottom:4px;font-size:11px;font-family:var(--mono,monospace)}
+.vv-verdict{display:inline-flex;align-items:center;gap:6px;margin-top:8px;padding:6px 10px;border-radius:8px;background:#FEF2F2;color:#B91C1C;font-size:13px}
+:root[data-theme="dark"] .vv-verdict{background:rgba(239,68,68,.15);color:#FCA5A5}
+.vv-verdict svg{width:15px;height:15px}
+.vv-bar{position:relative;height:22px;border-radius:6px;background:var(--surface-2);overflow:hidden}
+.vv-bar span{position:absolute;top:0;bottom:0;border-right:2px solid var(--surface)}
+.vv-ticks{position:relative;height:16px;font-size:11px;color:var(--faint);font-family:var(--mono,monospace)}
+.vv-ticks span{position:absolute;transform:translateX(-50%)}
+.vv-ticks span:first-child{transform:none}.vv-ticks span:last-child{transform:translateX(-100%)}
+.vv-segs{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
+.vv-segs li{display:grid;grid-template-columns:10px 76px minmax(0,1fr);gap:8px;align-items:start;font-size:13.5px}
+.vv-segs .dot{width:10px;height:10px;border-radius:3px;margin-top:4px}
+.vv-claims{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}.vv-claims li{display:flex;flex-direction:column;gap:3px;padding:8px 10px;border-radius:8px;background:var(--surface-2)}
+.vv-q{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.vv-q li{display:flex;flex-wrap:wrap;align-items:center;gap:8px;justify-content:space-between;font-size:13.5px;padding:6px 0;border-top:1px solid var(--line)}
+.vv-q li:first-child{border-top:0}
+.vnews{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.vnews li{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13.5px}
+.vchk{list-style:none;margin:6px 0;padding:0;display:flex;flex-direction:column;gap:6px}
+.vchk li{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:12.5px}
+.vchk-box{margin-top:8px;padding:8px 10px;border-radius:8px;border:1px dashed var(--line);background:var(--surface-2)}
+.fic{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.02em;padding:0 6px;border-radius:999px;background:#FEF3C7;color:#92400E;border:1px solid #FDE68A;vertical-align:1px}
+:root[data-theme="dark"] .fic{background:rgba(245,158,11,.15);color:#FCD34D;border-color:rgba(245,158,11,.35)}
+.fic-note{display:flex;align-items:center;gap:5px;color:#92400E;margin:-4px 0 8px}.fic-note svg{width:13px;height:13px}
+:root[data-theme="dark"] .fic-note{color:#FCD34D}
+.nav.sub-demo .fic{margin-left:auto}
+.dd-wrap{display:grid;grid-template-columns:260px minmax(0,1fr);gap:16px;align-items:start}
+@media (max-width:900px){.dd-wrap{grid-template-columns:1fr}}
+.dd-list{padding:10px;display:flex;flex-direction:column;gap:2px;position:sticky;top:76px}
+.dd-f{display:flex;gap:10px;align-items:center;width:100%;padding:8px;border-radius:9px;border:1px solid transparent;background:none;color:inherit;font:inherit;cursor:pointer;font-size:13.5px}
+.dd-f:hover{background:var(--surface-2)}.dd-f.on{background:var(--accent-soft,rgba(79,70,229,.08));border-color:var(--accent,#4F46E5)}
+.dd-f > svg{width:15px;height:15px;color:var(--faint)}
+.dd-main{padding:18px 20px}
+.dd-sum{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:14px 0;padding:10px 12px;border-radius:10px;background:var(--surface-2)}
+.dd-sum b{margin-right:6px;font-size:13.5px}
+.dd-cat{margin-bottom:16px}
+.dd-cat h4{display:flex;align-items:center;gap:8px;margin:0 0 6px;font-size:14px}
+.dd-cat h4 svg{width:16px;height:16px;color:var(--muted)}
+.dd-cat ul{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.dd-it{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border-top:1px solid var(--line)}
+.dd-it:first-child{border-top:0}
+.dd-st{flex:none;min-width:118px;justify-content:flex-start}
+.dd-t{font-size:13.5px;font-weight:600;margin-bottom:2px}
+.ddk{display:inline-flex;align-items:center;gap:3px;color:var(--faint);margin-right:4px}.ddk svg{width:12px;height:12px}
+.dd-ans{margin-top:5px;font-size:12.5px;padding:6px 8px;border-radius:7px;background:var(--surface-2)}
+.dd-act{flex:none}
+@media (max-width:700px){.dd-it{flex-wrap:wrap}.dd-act{width:100%}}
+.dd-files{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.dd-files li{display:flex;gap:10px;align-items:center;padding:8px 10px;border:1px solid var(--line);border-radius:10px;font-size:13.5px}
+.dd-mini{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--surface)}
+.dd-mini b svg{width:15px;height:15px;vertical-align:-2px}
+.dd-top{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:4px;font-size:12.5px;color:#B91C1C}
+:root[data-theme="dark"] .dd-top{color:#FCA5A5}
+.dd-top li{display:flex;gap:6px;align-items:flex-start}.dd-top svg{width:13px;height:13px;margin-top:2px;flex:none}
+.test-ans{margin-top:6px;font-size:12px;color:#92400E}
 </style>
 
 <div class="app">
@@ -1636,6 +1714,7 @@ const DEALS = {
   remy:{name:"Remy AI", stage:"Watchlist", tone:"t-line", desc:"YC W26 · robots for dexterous warehouse tasks, starting with e-commerce 3PLs", next:"Internal screen · Nov 10", owner:"Priya Shah"},
   darwin:{name:"Darwin", stage:"Screening", tone:"t-blue", desc:"YC F25 · robot technicians for data centers", next:"Partner discussion · Nov 16", owner:"Alex Morgan"},
   aktoria:{name:"Aktoria Robotics", stage:"Watchlist", tone:"t-line", desc:"YC S26 · remote human operators who take over when robots fail", next:"Internal screen · Nov 11", owner:"Priya Shah"},
+  fernhook:{name:"Fernhook Robotics", fictional:true, stage:"Partner meeting", tone:"t-blue", desc:"Fictional demo company · autonomous picking robots for grocery fulfillment", next:"Diligence call · Nov 13", owner:"Alex Morgan"},
   shiraz:{name:"Shiraz AI", stage:"Watchlist", tone:"t-line", desc:"YC S26 · factory robots that learn a task from one demonstration", next:"Revisit · Nov 20", owner:"Priya Shah"}
 };
 
@@ -1697,6 +1776,7 @@ const STAGES = ["Sourcing","Screening","Partner meeting","Due diligence","Invest
 const STAGE_ICON = ["search","phone","presentation","microscope","gavel","file-signature","rocket","life-buoy","trending-up","door-open"];
 const EXITS = {};
 const PIPELINE = [
+  {kind:"deal", entity:"fernhook", stage:2, note:"Fictional demo company used to show verification. Founder sent a deck and a demo video."},
   {kind:"deal", entity:"remy", stage:0, note:"Warehouse manipulation robots. Overlaps with Ultra; needs a conflict check."},
   {kind:"deal", entity:"aktoria", stage:0, note:"Remote human operators for robots. No funding or customers disclosed."},
   {kind:"deal", entity:"shiraz", stage:0, note:"Learning from one demonstration. Least public information of the four."},
@@ -1711,6 +1791,7 @@ const MEETINGS = [
   {id:"K-1", date:"2026-11-11", time:"14:00", dur:30, kind:"deal", entity:"aktoria", stage:0, type:"Internal screen", title:"Aktoria Robotics: teleoperation network screen", who:["Priya Shah"], loc:"Meridian office, SF", prep:"IBTimes article; company claims to verify"},
   {id:"D-0", date:"2026-11-06", time:"16:00", dur:20, kind:"deal", entity:"darwin", stage:1, type:"Internal screen", title:"Darwin: pre-seed news check", who:["Priya Shah"], loc:"Meridian office, SF", notes:"RuntimeWire reports a $3.6M pre-seed led by Link Ventures (single source). Moved to Screening."},
   {id:"D-2", date:"2026-11-16", time:"11:00", dur:30, kind:"deal", entity:"darwin", stage:1, type:"Partner discussion", title:"Darwin: decide whether to request an intro", who:["Alex Morgan","Priya Shah"], loc:"Meridian office, SF", prep:"Find a second source for the pre-seed"},
+  {id:"F-1", date:"2026-11-13", time:"15:00", dur:45, kind:"deal", entity:"fernhook", stage:2, type:"Diligence call", fictional:true, title:"Fernhook Robotics (fictional): verify deck and demo claims", who:["Alex Morgan","Priya Shah"], loc:"Video call", prep:"Claim ledger and demo-video check"},
   {id:"S-0", date:"2026-11-20", time:"15:00", dur:15, kind:"deal", entity:"shiraz", stage:0, type:"Internal screen", title:"Shiraz AI: revisit when public information appears", who:["Priya Shah"], loc:"Meridian office, SF", prep:"Check YC page and news"},
   // Vexo: decision D-1
   {id:"V-1", date:"2026-11-02", time:"10:00", dur:45, kind:"portfolio", entity:"vexo", stage:7, type:"Portfolio review", title:"Vexo: platform competition review", who:["Alex Morgan","Priya Shah"], loc:"Meridian office, SF", decision:"D-1", notes:"Opened D-1 after Amazon’s Bee Frontier launch (Oct 15) and CNBC’s consent-law report (Oct 18)."},
@@ -1748,7 +1829,7 @@ const dayName = iso => DAYS[new Date(iso+"T12:00:00").getDay()];
 function allMeetings(){ return MEETINGS.concat(S.meetings||[]).sort((a,b)=> (a.date+a.time).localeCompare(b.date+b.time)); }
 function meetEntity(m){
   if(m.kind==="exit"){ const x = EXITS[m.entity]; return {name:x.name, color:x.color, mk:x.mk, sub:"Exited"}; }
-  if(m.kind==="deal"){ const d = DEALS[m.entity]; return {name:d.name, color:"#64748B", mk:d.name.slice(0,2).toUpperCase(), sub:"Watchlist · "+d.stage}; }
+  if(m.kind==="deal"){ const d = DEALS[m.entity]; return {name:d.name, fictional:d.fictional, color:d.fictional?"#B45309":"#64748B", mk:d.name.slice(0,2).toUpperCase(), sub:(d.fictional?"Fictional demo company · ":"Watchlist · ")+d.stage}; }
   const c = COMPANIES[m.entity]; return {name:c.name, color:c.color, mk:c.mk, sub:"Assumed holding · "+c.stage};
 }
 
@@ -1867,7 +1948,7 @@ const QUESTIONS = [
 /* =====================================================================
    STATE
    ===================================================================== */
-const STORE_KEY = "meridian-demo-v5";
+const STORE_KEY = "meridian-demo-v6";
 const DEFAULT_STATE = () => ({
   workspace:"fund", lens:"investor", signal:"bee", focus:"all", format:"all", window:"30",
   saved:["pi"], tracked:["wearables","warehouse","defense"],
@@ -1890,7 +1971,7 @@ const DEFAULT_STATE = () => ({
 let S = DEFAULT_STATE();
 function fixWs(){ if(S.workspace!=="fund" && S.workspace!=="founder") S.workspace = "fund"; S.lens = S.workspace==="founder" ? "founder" : "investor"; }
 try{ const raw = localStorage.getItem(STORE_KEY); if(raw){ const p = JSON.parse(raw); S = Object.assign(DEFAULT_STATE(), p, {drawer:null, modal:null, detailOpen:false, shorts:null, mobileView:false}); } }catch(e){}
-fixWs();
+fixWs(); S.focus = "all";
 (S.addressed||[]).forEach(id => { if(REQUESTS[id]) REQUESTS[id].status = "Addressed"; });
 function persist(){ try{ const {drawer,modal,detailOpen,...rest} = S; localStorage.setItem(STORE_KEY, JSON.stringify(rest)); }catch(e){} }
 
@@ -1914,7 +1995,7 @@ const FOCUS_TONE = {"Physical AI":"t-violet","AI Diffusion":"t-blue"};
 const BAR_TONE = {"t-green":"b-green","t-blue":"b-blue","t-amber":"b-amber","t-violet":"b-violet"};
 const HBAR = {};
 const KPI_ICON = [["bar-chart-3","t-blue"],["building-2","t-violet"],["message-square","t-accent"],["timer","t-green"],["users","t-amber"]];
-const route = () => { const h = location.hash.replace("#",""); return ["portfolio","dealflow","company","investors","updates","fcal"].includes(h) ? h : "intelligence"; };
+const route = () => { const h = location.hash.replace("#",""); return ["portfolio","dealflow","dd","company","investors","updates","fcal"].includes(h) ? h : "intelligence"; };
 const EV_CLASS = {"Direct evidence":"ev-direct","Contextual relevance":"ev-context","Hypothesis":"ev-hyp","Unknown":"ev-unknown"};
 const EV_ICON = {"Direct evidence":"check-circle-2","Contextual relevance":"link-2","Hypothesis":"lightbulb","Unknown":"help-circle"};
 const evTag = t => `<span class="ev ${EV_CLASS[t]}">${ic(EV_ICON[t])}${esc(t)}</span>`;
@@ -1944,21 +2025,17 @@ function renderSide(){
   $("#side").innerHTML = `
     <button class="nav ${r==="intelligence"?"on":""}" data-act="nav" data-to="intelligence" title="News & Intelligence">${ic("radar")}<span class="l">News & Intelligence</span></button>
     <button class="nav ${r==="portfolio"?"on":""}" data-act="nav" data-to="portfolio" title="Portfolio Management">${ic("briefcase")}<span class="l">Portfolio Management</span>${fund()?`<span class="cnt">${open}</span>`:`<span class="lock">${ic("lock")}</span>`}</button>
+    <button class="nav ${route()==="dealflow"?"on":""}" data-act="nav" data-to="dealflow" title="Deal flow & Meetings">${ic("git-commit-horizontal")}<span class="l">Deal flow & Meetings</span>${fund()?`<span class="cnt">${PIPELINE.filter(r=>r.kind==="deal").length}</span>`:`<span class="lock">${ic("lock")}</span>`}</button>
+    ${fund()?`<button class="nav ${route()==="dd"?"on":""}" data-act="nav" data-to="dd" title="Due Diligence folders">${ic("folder-search")}<span class="l">Due Diligence</span><span class="cnt">${PIPELINE.length}</span></button>`:""}
     <button class="nav" data-act="drawer" data-name="mytasks" title="My tasks">${ic("list-checks")}<span class="l">My tasks</span><span class="cnt">${open}</span></button>
     <button class="nav" data-act="drawer" data-name="saved" title="Saved Signals">${ic("bookmark")}<span class="l">Saved Signals</span><span class="cnt">${S.saved.length}</span></button>
-    <button class="nav ${route()==="dealflow"?"on":""}" data-act="nav" data-to="dealflow" title="Deal flow & Meetings">${ic("git-commit-horizontal")}<span class="l">Deal flow & Meetings</span>${fund()?`<span class="cnt">${PIPELINE.filter(r=>r.kind==="deal").length}</span>`:`<span class="lock">${ic("lock")}</span>`}</button>
     <button class="nav" data-act="drawer" data-name="topics" title="Tracked Topics">${ic("activity")}<span class="l">Tracked Topics</span><span class="cnt">${S.tracked.length}</span></button>
-    <div class="side-sec lbl">Focus areas</div>
-    <div class="topic-list">
-      <button class="focus-row ${S.focus==="Physical AI"?"on":""}" data-act="focus" data-v="Physical AI"><span class="topic-dot" style="background:#7C3AED"></span>Physical AI</button>
-      <button class="focus-row ${S.focus==="AI Wearables"?"on":""}" data-act="focus" data-v="AI Wearables"><span class="topic-dot" style="background:#2563EB"></span>AI Wearables</button>
-    </div>
     <div class="side-sec lbl">Tracked topics</div>
     <div class="topic-list">
-      ${S.tracked.map(t => `<button class="nav" data-act="topic-filter" data-topic="${t}" style="height:auto;min-height:32px;padding-block:6px;font-weight:400;font-size:13px;line-height:1.35"><span class="topic-dot" style="background:${TOPICS[t].color}"></span><span class="l">${esc(TOPICS[t].name)}</span></button>`).join("") || `<p class="xs faint" style="padding:0 10px">No topics tracked.</p>`}
+      ${S.tracked.map(t => `<button class="nav ${route()==="intelligence"&&S.view==="tracker"&&S.trackTopic===t?"on":""}" data-act="topic-filter" data-topic="${t}" style="height:auto;min-height:32px;padding-block:6px;font-weight:400;font-size:13px;line-height:1.35"><span class="topic-dot" style="background:${TOPICS[t].color}"></span><span class="l">${esc(TOPICS[t].name)}</span></button>`).join("") || `<p class="xs faint" style="padding:0 10px">No topics tracked.</p>`}
     </div>
     <div class="side-foot">
-      <b>${ic("flask-conical")}Demo environment <span class="pill t-violet" style="margin-left:auto">v35</span></b>
+      <b>${ic("flask-conical")}Demo environment <span class="pill t-violet" style="margin-left:auto">v37</span></b>
       <span>Holdings are assumed for this demo. Company facts come from public sources; the fund, people and meetings are fictional.</span>
       <span class="conn">${ic("plug")}Connected (demo): Affinity · PitchBook · Crunchbase · Google Calendar</span>
       <button class="linkbtn" data-act="reset">${ic("rotate-ccw")}Reset demo</button>
@@ -2445,6 +2522,318 @@ function memoText(hid){
   return L.join("\n");
 }
 
+/* =====================================================================
+   VERIFICATION (adapted from the Receipts prototype): claim ledger,
+   demo-video check, founder-answer check. Planted false claims come only
+   from clearly labeled fictional sources ("Demo input"), never from the
+   real companies; checks compare them against the companies' real public record.
+   ===================================================================== */
+const VSTAT = {
+  confirmed:{l:"Independently confirmed", t:"t-green", i:"check-circle-2", use:"Can count as evidence"},
+  company:{l:"Company-reported only", t:"t-amber", i:"building-2", use:"Reference only · ask for support"},
+  single:{l:"Single source", t:"t-amber", i:"file-question", use:"Reference only · wait for a second source"},
+  amplified:{l:"Amplified in retelling", t:"t-violet", i:"megaphone", use:"Use the original wording"},
+  conflict:{l:"Sources conflict", t:"t-red", i:"git-compare", use:"Must ask before relying on it"},
+  nosource:{l:"No source found", t:"t-line", i:"circle-slash", use:"Excluded from evidence"}
+};
+const CLAIMS = [
+  {id:"c-f1", co:"fernhook", claim:"Fernhook’s robots pick 24/7 with zero human help", seen:{label:"Fernhook pitch deck, slide 6", fic:true}, status:"conflict",
+   original:{text:"robots pick autonomously, with remote assist on about 1 in 8 picks", label:"Fernhook customer case study, p. 3", fic:true}, viral:"robots pick 24/7 with zero human help",
+   trace:[["Pitch deck slide 6 says “zero human help”",{label:"Pitch deck",fic:true}],["Fernhook’s own case study: remote assist on about 1 in 8 picks",{label:"Case study",fic:true}],["The two documents come from the same company and disagree",null]], q:"How many remote assists per 100 picks did you need last month, by site?"},
+  {id:"c-f2", co:"fernhook", claim:"Fernhook raised an $18M Series A", seen:{label:"“Robotics Roundup” newsletter", fic:true}, status:"conflict",
+   original:{text:"Fernhook closes a $12M Series A", label:"Fernhook press release, Sep 30", fic:true}, viral:"Fernhook closes an $18M Series A",
+   trace:[["Press release: $12M",{label:"Press release",fic:true}],["Newsletter: $18M, no source cited",{label:"Newsletter",fic:true}],["Possible explanation: a later extension, not announced anywhere",null]], q:"Was there an extension after the $12M Series A? Please share the cap table."},
+  {id:"c-f3", co:"fernhook", claim:"Fernhook hits a 99.5% pick success rate", seen:{label:"Founder’s social post", fic:true}, status:"amplified",
+   original:{text:"99.5% pick success on a curated test set of 40 SKUs in our lab", label:"Fernhook technical blog", fic:true}, viral:"99.5% pick success in live stores",
+   trace:[["Technical blog: lab test, 40 hand-picked items",{label:"Technical blog",fic:true}],["Social post drops “lab” and “40 SKUs”, adds “live stores”",{label:"Social post",fic:true}]], q:"What is the pick success rate in live stores, across the full catalog?"},
+  {id:"c-f4", co:"fernhook", claim:"Fernhook signed a 3-year contract with a top-5 US grocer", seen:{label:"Pitch deck, slide 9", fic:true}, status:"nosource",
+   trace:[["No press release, customer statement or filing found",null],["The deck names no customer",{label:"Pitch deck",fic:true}]], q:"Which grocer is it, and can we speak to them?"},
+  {id:"c-f5", co:"fernhook", claim:"A pilot customer cut picking labor costs by 40%", seen:{label:"Fernhook customer case study", fic:true}, status:"company",
+   trace:[["Only in Fernhook’s own case study; the customer is unnamed",{label:"Case study",fic:true}]], q:"Can the pilot customer confirm the 40% labor savings and how it was measured?"},
+  {id:"c-f6", co:"fernhook", claim:"Fernhook is based in Oakland with 22 employees", seen:{label:"Pitch deck, slide 2", fic:true}, status:"confirmed",
+   trace:[["State business registry lists the Oakland address",{label:"Business registry",fic:true}],["Hiring page and team page match the headcount",{label:"Company site",fic:true}]]},
+  {id:"c-u4", co:"ultra", news:"ultra", claim:"Ultra has raised $62M in total", seen:{label:"Fortune, Oct 9, 2026", src:"ultra"}, status:"confirmed",
+   trace:[["Fortune: $50M Series A plus a $12M seed","ultra"],["Gunderson Dettmer (company counsel): same figures","ultragunder"],["SiliconANGLE: same figures","ultrasa"]]},
+  {id:"c-u1", co:"ultra", news:"ultra", claim:"Ultra’s robots have packed 500,000+ orders", seen:{label:"Fortune, Oct 9, 2026", src:"ultra"}, status:"company",
+   trace:[["Fortune attributes the figure to Ultra","ultra"],["No customer or third-party count found",null]], q:"Which customer can confirm the 500,000+ orders figure, and over what period?"},
+  {id:"c-g4", co:"gecko", claim:"Gecko was valued at $1.25B in its Series D", seen:{label:"The Robot Report, Jun 12, 2025", src:"geckod"}, status:"confirmed",
+   trace:[["The Robot Report: $125M Series D at $1.25B","geckod"],["Gecko newsroom lists the same round","geckonews"]]},
+  {id:"c-g1", co:"gecko", news:"navy", claim:"Gecko’s first Navy deal was a $71M award", seen:{label:"Gecko release, Oct 20, 2026", src:"gecko300"}, status:"conflict",
+   original:{text:"an initial award of up to $54M under a $71M ceiling", src:"geckoidiq"}, viral:"a $71M IDIQ",
+   trace:[["Oct 20 release calls the first deal a “$71M IDIQ”","gecko300"],["Mar 17 Gecko release: initial award up to $54M, ceiling $71M","geckoidiq"],["Navy Times (Oct 20): repeats the $54M initial award","navytimes"]], q:"Of the $71M ceiling, how much was actually awarded and obligated?"},
+  {id:"c-g3", co:"gecko", news:"navy", claim:"Gecko saves the Navy up to $8M per ship", seen:{label:"Gecko release, Oct 20, 2026", src:"gecko300"}, status:"company",
+   trace:[["The figure appears only in Gecko’s release","gecko300"],["Navy Times found no on-record Navy statement","navytimes"]], q:"Which ship and which Navy office can confirm the $8M savings?"},
+  {id:"c-v4", co:"vexo", claim:"The Vexo Band costs $99", seen:{label:"vexoai.com checkout", src:"vexocheckout"}, status:"confirmed",
+   trace:[["Checkout page: $99 launch price, $199 regular, until Dec 2","vexocheckout"],["RuntimeWire (Oct 2) reported $199, the regular price: consistent","vexort"]]},
+  {id:"c-v3", co:"vexo", claim:"Vexo raised a $125K seed round", seen:{label:"Dealroom profile"}, status:"nosource",
+   trace:[["Dealroom profile appears AI-generated; cites no source",null],["No announcement from Vexo or any investor",null],["Only Y Combinator is confirmed as a backer","vexoyc"]]},
+  {id:"c-d1", co:"darwin", news:"darwin", claim:"Darwin raised a $3.6M pre-seed led by Link Ventures", seen:{label:"RuntimeWire, Nov 6, 2026", src:"darwin"}, status:"single",
+   trace:[["RuntimeWire is the only outlet reporting the round","darwin"],["No announcement on Darwin’s YC page","darwinyc"]], q:"Can Darwin or Link Ventures confirm the $3.6M pre-seed and its terms?"},
+  {id:"c-r1", co:"remy", news:"remy", claim:"Remy has a first paying customer", seen:{label:"IBTimes UK, Sep 22, 2026", src:"remyib"}, status:"company",
+   trace:[["IBTimes reports it from the company; the customer is unnamed","remyib"]], q:"Who is the first paying customer, and how many robots are deployed there?"},
+  {id:"c-r2", co:"remy", claim:"Remy has raised $650K", seen:{label:"Third-party startup database"}, status:"nosource",
+   trace:[["The figure cites no source",null],["No announcement from Remy or investors",null]]},
+  {id:"c-a1", co:"aktoria", news:"aktoria", claim:"Aktoria’s operators cut robot costs by 50%", seen:{label:"IBTimes, Nov 4, 2026", src:"aktoriaib"}, status:"company",
+   trace:[["IBTimes itself flags the figure as an unverified company claim","aktoriaib"]], q:"What latency and cost do customers see in practice, versus the claimed 50% savings?"}
+];
+const VIDEOS = {
+  fernhook:{title:"“Fernhook’s robot picks 1,200 items an hour, fully autonomous”", poster:"Fernhook’s demo video, sent with the deck", dur:24,
+    segs:[
+      {a:0,b:7,k:"speed",l:"Own footage, played about 3x faster",d:"Frames match Fernhook’s earlier public video of the same pick. Motion timing is about 3x the original."},
+      {a:7,b:13,k:"reused",l:"Reused from an unrelated robot video",d:"Matches a 2025 clip from a different warehouse-robot company. It is not Fernhook’s robot."},
+      {a:13,b:19,k:"teleop",l:"Operator visible at the frame edge",d:"A hand and a controller enter the frame at 0:15. The cut follows a failed grasp."},
+      {a:19,b:24,k:"unmatched",l:"No source match · AI-detector signal 0.71",d:"No source found. A detector score is a signal, not a verdict."}],
+    claims:[
+      {c:"“1,200 items an hour”", v:"Not supported. The fast segment is sped up about 3x; at real speed it is about 400 an hour.", st:"conflict", src:null},
+      {c:"“Fully autonomous”", v:"Contradicted. An operator appears at 0:15, and Fernhook’s own case study reports remote assist on about 1 in 8 picks.", st:"conflict", src:null},
+      {c:"“Fernhook’s robot”", v:"Partly. Segment 2 shows a different company’s robot.", st:"amplified", src:null}],
+    verdict:"The claims are stronger than the footage supports",
+    qs:["Can you share the unedited 1x footage behind your public demos?","How many remote assists per hour do your robots need at the pilot site?","Can we watch a live shift on site?"]}
+};
+const VSEG = {speed:{l:"Sped up",c:"#F59E0B"},reused:{l:"Reused footage",c:"#8B5CF6"},teleop:{l:"Teleoperation cue",c:"#EF4444"},unmatched:{l:"No match / AI signal",c:"#94A3B8"}};
+
+function diffWords(a, b){
+  const A = a.split(/\s+/), B = b.split(/\s+/); const n=A.length, m=B.length;
+  const L = Array.from({length:n+1},()=>Array(m+1).fill(0));
+  for(let i=n-1;i>=0;i--) for(let j=m-1;j>=0;j--) L[i][j] = A[i].toLowerCase().replace(/[“”".,;]/g,"")===B[j].toLowerCase().replace(/[“”".,;]/g,"") ? L[i+1][j+1]+1 : Math.max(L[i+1][j],L[i][j+1]);
+  let i=0,j=0,out=[];
+  while(i<n && j<m){ if(A[i].toLowerCase().replace(/[“”".,;]/g,"")===B[j].toLowerCase().replace(/[“”".,;]/g,"")){ out.push(esc(B[j])); i++; j++; } else if(L[i+1][j]>=L[i][j+1]){ out.push(`<del>${esc(A[i])}</del>`); i++; } else { out.push(`<ins>${esc(B[j])}</ins>`); j++; } }
+  while(i<n) out.push(`<del>${esc(A[i++])}</del>`); while(j<m) out.push(`<ins>${esc(B[j++])}</ins>`);
+  return out.join(" ");
+}
+document.addEventListener("toggle", e => { const d = e.target; if(d.matches && d.matches("details.vclaim")){ if(d.open) S.vOpen = d.dataset.id; else if(S.vOpen===d.dataset.id) S.vOpen = null; } }, true);
+const vPill = st => `<span class="pill ${VSTAT[st].t}">${ic(VSTAT[st].i)}${VSTAT[st].l}</span>`;
+function claimRow(c){
+  const nm = c.q && nextMeetingFor(c.co); const inPrep = c.q && inAnyPack(c.q);
+  return `<details class="vclaim ${c.status}" data-id="${c.id}" ${S.vOpen===c.id?"open":""}>
+    <summary><div class="vc-top">${vPill(c.status)}<span class="sp"></span><span class="xs faint">${esc(VSTAT[c.status].use)}</span></div>
+      <div class="vc-claim">${esc(c.claim)}</div><div class="xs muted">Seen in: ${esc(c.seen.label)} ${c.seen.src?srcChip(c.seen.src):""}${c.seen.fic?`<span class="fic">Fictional</span>`:""}</div></summary>
+    <div class="vc-body">
+      ${c.original?`<div class="vc-diff"><div class="lbl">What changed</div><p class="xs muted" style="margin:0 0 4px">Original wording ${c.original.src?srcChip(c.original.src):`· ${esc(c.original.label)} <span class="fic">Fictional</span>`}</p><p class="vc-orig">${esc(c.original.text)}</p><p class="xs muted" style="margin:8px 0 4px">As it appeared</p><p class="vc-mut">${diffWords(c.original.text, c.viral)}</p></div>`:""}
+      <div class="lbl" style="margin-top:10px">How the agent traced it</div>
+      <ol class="vc-trace">${c.trace.map(([t,sk])=>`<li>${esc(t)} ${!sk?"":typeof sk==="string"?srcChip(sk):`<span class="fic">${esc(sk.label)} · fictional</span>`}</li>`).join("")}</ol>
+      ${c.q ? `<div class="row wrap" style="gap:8px;margin-top:10px"><span class="small"><b>Ask:</b> ${esc(c.q)}</span>${nm ? (inPrep ? `<button class="btn sm on" data-act="prep-open" data-id="${nm.id}">${ic("check")}In prep pack · ${fmtShort(nm.date)}</button>` : `<button class="btn sm pri" data-act="ddq-prep" data-c="${c.co}" data-q="${esc(c.q)}" data-src="${c.news||"ledger"}">${ic("list-plus")}Add to ${fmtShort(nm.date)} prep pack</button>`) : ""}</div>` : ""}
+    </div></details>`;
+}
+function claimLedger(co, compact){
+  const rows = CLAIMS.filter(c=>c.co===co); if(!rows.length) return "";
+  const counts = Object.keys(VSTAT).map(k=>[k, rows.filter(r=>r.status===k).length]).filter(x=>x[1]);
+  return `<div class="vledger">
+    <div class="sec-h"><h3>${ic("shield-check")} Claim ledger</h3><span class="xs faint">${rows.length} claims checked</span></div>
+    ${DEALS[co]&&DEALS[co].fictional?`<p class="xs fic-note">${ic("flask-conical")}Fictional company and sources, made up to demo the checks.</p>`:""}
+    ${compact?"":`<p class="small muted" style="margin:-4px 0 8px">Every checkable claim about this company, traced to its original source. Only independently confirmed claims can count as evidence.</p>`}
+    <div class="row wrap" style="gap:6px;margin-bottom:8px">${counts.map(([k,n])=>`<span class="pill ${VSTAT[k].t}">${n} · ${VSTAT[k].l}</span>`).join("")}</div>
+    ${rows.map(claimRow).join("")}
+  </div>`;
+}
+function videoCheck(co){
+  const v = VIDEOS[co];
+  if(!v) return `<div class="vvideo empty"><div class="sec-h"><h3>${ic("clapperboard")} Demo video check</h3></div><p class="small muted">Paste a demo video link to check speed, reused footage, teleoperation cues and AI-generation signals. Live video analysis is on the roadmap.</p><button class="btn sm pri" data-act="dd-open" data-c="fernhook" data-go="">${ic("flask-conical")}See the verification demo: Fernhook Robotics (fictional)</button></div>`;
+  const pct = x => (x/v.dur*100).toFixed(2)+"%";
+  const nm = nextMeetingFor(co);
+  return `<div class="vvideo">
+    <div class="sec-h"><h3>${ic("clapperboard")} Demo video check</h3><span class="demo-in">${ic("flask-conical")}Pre-run demo · fictional</span></div>
+    <div class="vv-head"><div class="vv-thumb">${ic("play")}<span>0:${String(v.dur).padStart(2,"0")}</span></div>
+      <div style="min-width:0;flex:1"><b>${esc(v.title)}</b><div class="xs muted">${esc(v.poster)} <span class="fic">Fictional</span></div>
+      <div class="vv-verdict">${ic("alert-triangle")}<b>${esc(v.verdict)}</b></div></div></div>
+    <div class="lbl" style="margin:12px 0 6px">Source map</div>
+    <div class="vv-bar">${v.segs.map(g=>`<span style="left:${pct(g.a)};width:${pct(g.b-g.a)};background:${VSEG[g.k].c}" title="${esc(g.l)}"></span>`).join("")}</div>
+    <div class="vv-ticks">${[0,6,12,18,24].map(t=>`<span style="left:${pct(t)}">0:${String(t).padStart(2,"0")}</span>`).join("")}</div>
+    <ul class="vv-segs">${v.segs.map(g=>`<li><span class="dot" style="background:${VSEG[g.k].c}"></span><span class="mono xs faint">0:${String(g.a).padStart(2,"0")}–0:${String(g.b).padStart(2,"0")}</span><div><b>${esc(g.l)}</b><div class="xs muted">${esc(g.d)}</div></div></li>`).join("")}</ul>
+    <div class="lbl" style="margin:12px 0 6px">Claims in the post vs. the evidence</div>
+    <ul class="vv-claims">${v.claims.map(c=>`<li><div class="row wrap" style="gap:8px"><b>${esc(c.c)}</b>${vPill(c.st)}</div><div class="small muted">${esc(c.v)} ${c.src?srcChip(c.src):""}</div></li>`).join("")}</ul>
+    <p class="xs muted" style="margin-top:8px">Teleoperation is not wrong in itself: many companies use human operators to train robots. The check flags when a claim goes further than the footage shows.</p>
+    <div class="lbl" style="margin:12px 0 6px">Questions to ask</div>
+    <ul class="vv-q">${v.qs.map(q=>{ const inP = inAnyPack(q); return `<li><span>${esc(q)}</span>${nm?(inP?`<button class="btn sm on" data-act="prep-open" data-id="${nm.id}">${ic("check")}In prep pack</button>`:`<button class="btn sm" data-act="ddq-prep" data-c="${co}" data-q="${esc(q)}" data-src="video">${ic("list-plus")}Add to ${fmtShort(nm.date)} prep pack</button>`):""}</li>`; }).join("")}</ul>
+  </div>`;
+}
+function claimsInNews(s){
+  if(!fund()) return "";
+  const rows = CLAIMS.filter(c=>c.news===s.id); if(!rows.length) return "";
+  return `<section class="ddq-sec"><h4>${ic("shield-check")}Claims in this news</h4><ul class="vnews">${rows.map(c=>`<li>${vPill(c.status)}<span>${esc(c.claim)}</span><button class="linkbtn" data-act="co-verify" data-c="${c.co}" data-id="${c.id}">Trace ${ic("arrow-right")}</button></li>`).join("")}</ul></section>`;
+}
+/* ---- Founder-answer check: public record, plus (founder side only) consistency across investors ---- */
+const TEST_ANSWERS = {
+  m0:"We already shipped all 1,000 bands in October to the US and Canada.",
+  m4:"Unlike Bee Frontier, which stores your audio in the cloud, Vexo keeps everything on your phone and never uses the cloud.",
+  m3:"Each band costs about $45, including transcription and AI fees.",
+  n2:"About $58 per band, including cloud transcription."
+};
+const FERN_TEST = {
+  "How many remote assists per 100 picks did you need last month, by site?":"Basically none. The robots are fully autonomous and run with zero human help.",
+  "Was there an extension after the $12M Series A? Please share the cap table.":"We raised $18M in the Series A.",
+  "What is the pick success rate in live stores, across the full catalog?":"99.5%, same as in our lab tests.",
+  "Can the pilot customer confirm the 40% labor savings and how it was measured?":"Yes, our pilot customer saw 40% labor savings and is happy to talk."
+};
+function checkAnswer(text, key, founderSide, co){
+  const t = text||""; const out = [];
+  if(co==="fernhook"){
+    if(/(fully autonomous|zero human|no human|basically none)/i.test(t)) out.push({st:"conflict", m:"Fernhook’s own case study reports remote assist on about 1 in 8 picks, and an operator appears in the demo video at 0:15.", src:null});
+    if(/\$18M/i.test(t)) out.push({st:"conflict", m:"Fernhook’s Sep 30 press release says $12M. Ask for the cap table or the extension documents.", src:null});
+    if(/99\.5/.test(t) && !/lab only|curated/i.test(t)) out.push({st:"amplified", m:"The blog measured 99.5% on 40 curated items in a lab, not in live stores.", src:null});
+    if(/40%/.test(t)) out.push({st:"company", m:"Still company-reported. Get the customer’s name and a reference call before counting it.", src:null});
+    if(!out.length && t.trim()) out.push({st:"confirmed", m:"No conflict with the claim ledger found.", src:null});
+    return out;
+  }
+  if(/fda/i.test(t) && /(clear|approv|certif)/i.test(t)) out.push({st:"conflict", m:"Vexo’s own site says the Band is not FDA-cleared.", src:"vexocheckout"});
+  if(/(shipped|delivered)/i.test(t) && /(all|1,000|1000)/i.test(t) && /(october|already)/i.test(t)) out.push({st:"conflict", m:"Vexo’s Terms (Oct 30) give an estimated delivery before Dec 2; nothing public shows bands shipped yet.", src:"vexoterms"});
+  if(/(bee|amazon)/i.test(t) && /(stor|keep|save)/i.test(t) && /(audio|recording)/i.test(t) && !/(no audio|not store|doesn.t store|does not store)/i.test(t)) out.push({st:"conflict", m:"Amazon says Bee stores no audio. That is Amazon’s own claim, but it contradicts this answer.", src:"bee"});
+  if(/(on your phone|on-device|on device|never (uses )?the cloud)/i.test(t) && /(everything|never|only)/i.test(t)) out.push({st:"amplified", m:"Vexo’s privacy policy also offers cloud transcription (Deepgram, Soniox). “Never uses the cloud” goes further than the policy.", src:"vexoprivacy"});
+  if(founderSide && key){
+    const me = allIRQ().find(x=>x.key===key); const myNums = (t.match(/\$\d[\d,.]*/g)||[]);
+    if(me && myNums.length) similarTo(me).filter(o=>o.inv!==me.inv && o.ans).forEach(o => { const on = (o.ans.text.match(/\$\d[\d,.]*/g)||[]); if(on.length && on[0]!==myNums[0]) out.push({st:"conflict", m:`You told ${INV_NAME[o.inv]} ${on[0]} for the same topic (Q${o.i+1}). Investors may compare notes.`, src:null}); });
+  }
+  if(!out.length && /(\d+%|\$\d)/.test(t)) out.push({st:"company", m:"New figure not in public sources. Expect a request for supporting data.", src:null});
+  if(!out.length && t.trim()) out.push({st:"confirmed", m:"No conflict with public sources found.", src:null});
+  return out;
+}
+const vChecks = r => r.length ? `<ul class="vchk">${r.map(x=>`<li>${vPill(x.st)}<span>${esc(x.m)} ${x.src?srcChip(x.src):""}</span></li>`).join("")}</ul>` : "";
+
+/* =====================================================================
+   DD FOLDER: one folder per company that gathers what Meridian already has
+   (claim ledger, questions from news, meeting answers, founder answers,
+   standard requests, files). Nothing new is invented for real companies.
+   ===================================================================== */
+const DD_CATS = [
+  ["team","Team","users"],["product","Product & technology","cpu"],["customers","Customers & traction","handshake"],
+  ["market","Market & competition","swords"],["funding","Funding & cap table","landmark"],["legal","Legal & regulatory","scale"]
+];
+const CLAIM_CAT = {"c-f1":"product","c-f2":"funding","c-f3":"product","c-f4":"customers","c-f5":"customers","c-f6":"team",
+  "c-u4":"funding","c-u1":"customers","c-g4":"funding","c-g1":"customers","c-g3":"customers","c-v4":"product","c-v3":"funding",
+  "c-d1":"funding","c-r1":"customers","c-r2":"funding","c-a1":"product"};
+function ddCatOf(t){
+  if(/rais|round|seed|series|valu|cap table|led the|terms\?$|funding/i.test(t)) return "funding";
+  if(/fda|consent|regulat|privacy|legal|law|data rights|exclusivity/i.test(t)) return "legal";
+  if(/compet|bee|formic|differ|choose|humanoid|gulf|versus the claimed/i.test(t)) return "market";
+  if(/customer|grocer|orders|ordered|renewal|3pl|pilot|adnoc|operators are you|pays|navy|service besides|robots run at|live shift/i.test(t)) return "customers";
+  if(/founder|team|employee/i.test(t)) return "team";
+  return "product";
+}
+const DD_STD = [
+  {id:"s1", cat:"team", t:"Founder reference calls (two per founder)"},
+  {id:"s2", cat:"team", t:"Founder background: prior companies and roles (public record only)"},
+  {id:"s3", cat:"product", t:"Technical deep dive with the CTO"},
+  {id:"s4", cat:"customers", t:"Customer reference calls"},
+  {id:"s5", cat:"customers", t:"Revenue and pipeline by customer"},
+  {id:"s6", cat:"market", t:"Competitive landscape, in the founders’ words"},
+  {id:"s7", cat:"funding", t:"Cap table, SAFEs and notes"},
+  {id:"s8", cat:"funding", t:"Financial model and monthly burn"},
+  {id:"s9", cat:"legal", t:"Incorporation documents and IP assignment"},
+  {id:"s10", cat:"legal", t:"Material contracts"}
+];
+/* Fernhook (fictional) starts with some requests already in progress */
+const DD_SEED = {fernhook:{s1:"requested", s3:"done", s4:"requested", s7:"requested", s8:"received", s9:"received"}};
+const DD_FILES = {fernhook:[
+  {n:"Fernhook pitch deck (Series A)", t:"Deck", d:"2026-10-28", st:"received", i:"presentation"},
+  {n:"Customer case study: pilot grocer", t:"Case study", d:"2026-10-28", st:"received", i:"file-text"},
+  {n:"Press release: $12M Series A", t:"Press release", d:"2026-09-30", st:"received", i:"newspaper"},
+  {n:"Technical blog: 99.5% lab pick test", t:"Blog post", d:"2026-08-14", st:"received", i:"file-code"},
+  {n:"Demo video (24 s)", t:"Video", d:"2026-10-28", st:"received", i:"clapperboard"},
+  {n:"Financial model FY26–FY28", t:"Spreadsheet", d:"2026-11-03", st:"received", i:"sheet"},
+  {n:"Certificate of incorporation and IP assignment", t:"Legal", d:"2026-11-03", st:"received", i:"scale"},
+  {n:"Cap table", t:"Spreadsheet", d:null, st:"requested", i:"sheet"}
+]};
+const ddReqState = (co,id) => ((S.ddReq||{})[co]||{})[id] || (DD_SEED[co]||{})[id] || "open";
+const DD_REQ_L = {open:["Not requested","t-line"], requested:["Requested · awaiting","t-amber"], received:["Received · to review","t-blue"], done:["Reviewed","t-green"]};
+const DD_ST = {
+  verified:{l:"Verified", t:"t-green", i:"check-circle-2"},
+  support:{l:"Needs support", t:"t-amber", i:"file-question"},
+  conflict:{l:"Conflict", t:"t-red", i:"git-compare"},
+  unsupported:{l:"No source", t:"t-line", i:"circle-slash"},
+  open:{l:"Open", t:"t-blue", i:"circle-dashed"}
+};
+const vToDD = st => st==="confirmed" ? "verified" : (st==="company"||st==="single") ? "support" : (st==="conflict"||st==="amplified") ? "conflict" : "unsupported";
+const worstOf = arr => ["conflict","unsupported","support","open","verified"].find(k=>arr.includes(k)) || "open";
+function ddEntity(co){ const d = DEALS[co], c = COMPANIES[co]; const r = PIPELINE.find(x=>x.entity===co);
+  return {id:co, name:(c||d).name, fictional:!!(d&&d.fictional), kind:c?"portfolio":"deal", stage:STAGES[pipeStage(r)], color:c?c.color:(d.fictional?"#B45309":"#64748B"), mk:c?c.mk:d.name.slice(0,2).toUpperCase()}; }
+function ddQuestions(co){
+  const out = []; const seen = new Set();
+  const push = (q, from, src) => { if(seen.has(q)) return; seen.add(q);
+    let st = "open", note = "Not asked yet", ans = null, mid = null;
+    Object.entries(S.prep||{}).forEach(([m,pk]) => { const mt = allMeetings().find(x=>x.id===m); if(!mt || mt.entity!==co) return; const x = pk.qs.find(y=>y.q===q); if(!x) return; mid = m;
+      if(x.answer){ ans = {text:x.answer, where:"Meeting · "+fmtShort(mt.date)}; } else { note = "Planned for "+fmtShort(mt.date)+" meeting"; } });
+    if(co===FCO){ const i = irQs().indexOf(q); if(i>-1){ const a = (S.ir.answers||{})[i]; if(a){ ans = {text:a.text, where:"Founder reply (Investor Relations)"}; } else if(!ans) note = "Sent to founder · awaiting reply"; } }
+    if(ans){ const ch = checkAnswer(ans.text, null, false, co); st = worstOf(ch.map(x=>vToDD(x.st))); note = "Answered · "+ans.where; }
+    out.push({q, from, src, st, note, ans, mid, cat:ddCatOf(q)});
+  };
+  Object.entries(DDQ).forEach(([src,qs]) => qs.filter(x=>x.c===co).forEach(x => push(x.q, "news", src)));
+  CLAIMS.filter(c=>c.co===co && c.q).forEach(c => push(c.q, "ledger", c.news||null));
+  (VIDEOS[co] ? VIDEOS[co].qs : []).forEach(q => push(q, "video", null));
+  Object.entries(S.prep||{}).forEach(([m,pk]) => { const mt = allMeetings().find(x=>x.id===m); if(mt && mt.entity===co) pk.qs.forEach(x => push(x.q, "you", null)); });
+  return out;
+}
+function ddItems(co){
+  const items = [];
+  CLAIMS.filter(c=>c.co===co).forEach(c => items.push({type:"claim", cat:CLAIM_CAT[c.id]||ddCatOf(c.claim), t:c.claim, st:vToDD(c.status), note:VSTAT[c.status].l+" · seen in "+c.seen.label, id:c.id}));
+  ddQuestions(co).forEach(q => items.push({type:"q", cat:q.cat, t:q.q, st:q.st, note:q.note, q}));
+  DD_STD.forEach(r => { const v = ddReqState(co, r.id); items.push({type:"req", cat:r.cat, t:r.t, st: v==="done" ? "verified" : "open", note:DD_REQ_L[v][0], req:r, v}); });
+  return items;
+}
+function ddCounts(co){ const it = ddItems(co); const c = {}; Object.keys(DD_ST).forEach(k=>c[k]=it.filter(x=>x.st===k).length); c.total = it.length; return c; }
+function ddCountPills(c){ return Object.keys(DD_ST).filter(k=>c[k]).map(k=>`<span class="pill ${DD_ST[k].t}">${c[k]} · ${DD_ST[k].l}</span>`).join(""); }
+const DD_FROM = {news:["radar","From news"], ledger:["shield-check","From the claim ledger"], video:["clapperboard","From the demo video check"], you:["user","Added by you"]};
+function ddItemRow(x, co){
+  const nm = nextMeetingFor(co);
+  const right = x.type==="claim" ? `<button class="linkbtn" data-act="dd-tab" data-v="claims" data-id="${x.id}">Trace ${ic("arrow-right")}</button>`
+    : x.type==="req" ? (x.v==="open" ? `<button class="btn sm" data-act="dd-req" data-c="${co}" data-id="${x.req.id}">${ic("send")}Request${co===FCO?" from founder":""}</button>`
+        : x.v==="received" ? `<button class="btn sm" data-act="dd-done" data-c="${co}" data-id="${x.req.id}">${ic("check")}Mark reviewed</button>` : "")
+    : (x.q.mid ? `<button class="btn sm" data-act="prep-open" data-id="${x.q.mid}">${ic("clipboard-list")}Prep pack</button>` : nm ? `<button class="btn sm" data-act="ddq-prep" data-c="${co}" data-q="${esc(x.t)}" data-src="${x.q.src||x.q.from}">${ic("list-plus")}Add to ${fmtShort(nm.date)} prep</button>` : "");
+  const kind = x.type==="claim" ? `<span class="ddk">${ic("shield-check")}Claim</span>` : x.type==="req" ? `<span class="ddk">${ic("folder-input")}Request</span>` : `<span class="ddk">${ic(DD_FROM[x.q.from][0])}Question</span>`;
+  return `<li class="dd-it"><span class="pill ${DD_ST[x.st].t} dd-st">${ic(DD_ST[x.st].i)}${DD_ST[x.st].l}</span>
+    <div style="min-width:0;flex:1"><div class="dd-t">${esc(x.t)}</div><div class="xs muted">${kind} ${esc(x.note)}</div>
+    ${x.type==="q" && x.q.ans ? `<div class="dd-ans">“${esc(x.q.ans.text)}”</div>` : ""}</div>
+    <div class="dd-act">${right}</div></li>`;
+}
+function ddChecklist(co){
+  const it = ddItems(co); const f = S.ddFilter || "all";
+  const show = it.filter(x => f==="all" || x.st===f);
+  return `<div class="row wrap" style="gap:6px;margin-bottom:10px"><span class="xs muted">Show:</span>${[["all","All"]].concat(Object.keys(DD_ST).map(k=>[k,DD_ST[k].l])).map(([k,l])=>`<button class="chip ${f===k?"on":""}" data-act="dd-filter" data-v="${k}">${l}${k==="all"?"":" · "+it.filter(x=>x.st===k).length}</button>`).join("")}</div>
+  ${DD_CATS.map(([k,l,i]) => { const rows = show.filter(x=>x.cat===k); const all = it.filter(x=>x.cat===k);
+    if(!rows.length) return f==="all" ? `<section class="dd-cat"><h4>${ic(i)}${l}<span class="xs faint">0</span></h4><p class="xs faint">Nothing here yet.</p></section>` : "";
+    return `<section class="dd-cat"><h4>${ic(i)}${l}<span class="sp"></span><span class="pill ${DD_ST[worstOf(all.map(x=>x.st))].t}">${DD_ST[worstOf(all.map(x=>x.st))].l}</span></h4><ul>${rows.map(x=>ddItemRow(x,co)).join("")}</ul></section>`; }).join("")}`;
+}
+function ddFiles(co){
+  const c = COMPANIES[co]; const fic = DD_FILES[co];
+  const dataroom = fic ? `<span class="srcbadge">${ic("plug")}Data room: Google Drive (demo)</span><span class="fic">Fictional files</span>` : `<span class="srcbadge off">${ic("unplug")}Data room not connected</span><span class="xs muted">Connect Google Drive or DocSend to pull the company’s files here.</span>`;
+  const pub = c ? c.docs.map(id => docChip(id)).join("") : [...new Set(CLAIMS.filter(x=>x.co===co).flatMap(x=>[x.seen.src].concat(x.trace.map(t=>typeof t[1]==="string"?t[1]:null))).concat(Object.keys(DDQ).filter(k=>DDQ[k].some(q=>q.c===co)).flatMap(k=>{ const n = SINGLES.find(y=>y.id===k); return n?n.full.srcKeys:[]; })).filter(Boolean))].map(k=>srcChip(k)).join(" ");
+  return `<div class="row wrap" style="gap:8px;margin-bottom:10px">${dataroom}</div>
+  ${fic ? `<ul class="dd-files">${fic.map(f=>`<li><span class="tile sm t-line">${ic(f.i)}</span><div style="flex:1;min-width:0"><b>${esc(f.n)}</b><div class="xs muted">${esc(f.t)}${f.d?" · "+fmtShort(f.d):""}</div></div><span class="pill ${f.st==="received"?"t-blue":"t-amber"}">${f.st==="received"?"Received":"Requested"}</span></li>`).join("")}</ul>` : ""}
+  ${pub ? `<div class="lbl" style="margin:14px 0 6px">Public sources</div><div class="row wrap" style="gap:6px">${pub}</div>` : ""}`;
+}
+function ddFolderBody(co){
+  const t = S.ddTab || "checklist";
+  const tabs = [["checklist","Checklist"],["claims","Claims"],["video","Demo video"],["files","Files"]];
+  return `<div class="tabs" role="tablist" style="margin:0 0 14px">${tabs.map(([k,l])=>`<button role="tab" class="${t===k?"on":""}" data-act="dd-tab" data-v="${k}">${l}</button>`).join("")}</div>
+  ${t==="checklist" ? ddChecklist(co) : t==="claims" ? (claimLedger(co) || `<p class="small muted">No claims checked for this company yet.</p>`) : t==="video" ? videoCheck(co) : ddFiles(co)}`;
+}
+function ddLinks(co){
+  const e = ddEntity(co);
+  return `${e.kind==="portfolio" ? `<button class="btn sm" data-act="dd-goto-co" data-c="${co}">${ic("briefcase")}Open in Portfolio</button>` : ""}<button class="btn sm" data-act="dd-goto-df" data-c="${co}">${ic("git-commit-horizontal")}Open in Deal flow</button>`;
+}
+function renderDD(){
+  if(!fund()) return `<div class="page-h"><div><h1>Due diligence folders are part of the fund workspace</h1><p>Switch to VC to see them.</p></div></div>`;
+  const order = PIPELINE.map(r=>r.entity); const co = order.includes(S.ddCo) ? S.ddCo : "fernhook"; const e = ddEntity(co); const cnt = ddCounts(co);
+  const grp = [["Deal flow", order.filter(x=>!COMPANIES[x])],["Portfolio", order.filter(x=>COMPANIES[x])]];
+  return `<div class="page-h"><div><h1>Due Diligence</h1><p>One folder per company. It gathers checked claims, questions from news, meeting and founder answers, standard requests and files.</p></div></div>
+  <div class="dd-wrap">
+    <nav class="dd-list card" aria-label="DD folders">${grp.map(([g,ids])=>`<div class="lbl" style="margin:4px 4px 6px">${g}</div>${ids.map(id=>{ const x = ddEntity(id); const c = ddCounts(id); return `<button class="dd-f ${id===co?"on":""}" data-act="dd-open" data-c="${id}"><span class="mk-s" style="background:${x.color}">${x.mk}</span><span style="flex:1;min-width:0;text-align:left"><b>${esc(x.name)}</b>${x.fictional?` <span class="fic">Fictional</span>`:""}<span class="xs muted" style="display:block">${esc(x.stage)}${c.conflict?` · <span style="color:#DC2626">${c.conflict} conflict${c.conflict>1?"s":""}</span>`:""} · ${c.open} open</span></span>${ic("folder")}</button>`; }).join("")}`).join("")}</nav>
+    <section class="card dd-main">
+      <div class="row wrap" style="gap:10px;align-items:flex-start"><span class="mk-s" style="background:${e.color};width:36px;height:36px;font-size:13px;border-radius:9px">${e.mk}</span>
+        <div style="flex:1;min-width:0"><div class="row wrap" style="gap:6px"><h2 style="margin:0;font-size:20px">${ic("folder-open")} ${esc(e.name)} · DD folder</h2>${e.fictional?`<span class="fic">Fictional</span>`:""}</div><div class="xs muted">${esc(e.stage)} · ${e.kind==="portfolio"?"Assumed holding":"Deal flow"}</div></div>
+        <div class="row wrap" style="gap:6px">${ddLinks(co)}</div></div>
+      ${e.fictional?`<p class="xs fic-note" style="margin:8px 0 0">${ic("flask-conical")}Fictional company, files and sources, made up to demo diligence and verification.</p>`:""}
+      <div class="dd-sum"><b>${cnt.total} items</b>${ddCountPills(cnt)}</div>
+      ${ddFolderBody(co)}
+    </section>
+  </div>`;
+}
+function ddMini(co){
+  const cnt = ddCounts(co); const top = ddItems(co).filter(x=>x.st==="conflict").slice(0,2);
+  return `<div class="dd-mini"><div class="row wrap" style="gap:8px"><b>${ic("folder-open")} DD folder</b><span class="xs faint">${cnt.total} items</span><span class="sp"></span><button class="btn sm pri" data-act="dd-open" data-c="${co}" data-go="1">${ic("folder-open")}Open DD folder</button></div>
+    <div class="row wrap" style="gap:6px;margin-top:8px">${ddCountPills(cnt)}</div>
+    ${top.length?`<ul class="dd-top">${top.map(x=>`<li>${ic("git-compare")}<span>${esc(x.t)}</span></li>`).join("")}</ul>`:""}</div>`;
+}
+
 /* ---- Context on demand: key terms + what happened before (from the Topic Tracker) ---- */
 const GLOSSARY = [
   [/robots?-as-a-service|\bRaaS\b/i, "Robots-as-a-service (RaaS)", "The customer rents robots for a monthly fee instead of buying them."],
@@ -2552,8 +2941,8 @@ function renderPrepPack(mid){
     <div class="pp-step"><span class="pp-n">2</span><div style="flex:1;min-width:0"><h5>Questions to ask <span class="xs faint">${pk.qs.length}</span></h5>
       ${pk.qs.map((q,i) => { const h = q.h && hypById[q.h]; return `<div class="pp-q">
         <div class="ddq-q">${i+1}. ${esc(q.q)}</div>
-        <div class="ddq-m">${q.src&&SHORT[q.src]?`<span>${ic("radar")} ${esc(SHORT[q.src][0])}</span>`:`<span>${ic("user")} Added by you</span>`}${h?`<span class="tag">Tests ${h.code}: ${esc(h.criteria[q.k])}</span>`:""}</div>
-        <textarea id="pa-${i}" rows="2" placeholder="Answer heard in the meeting">${esc(q.answer||"")}</textarea>
+        <div class="ddq-m">${q.src&&SHORT[q.src]?`<span>${ic("radar")} ${esc(SHORT[q.src][0])}</span>`:q.src==="ledger"?`<span>${ic("shield-check")} From the claim ledger</span>`:q.src==="video"?`<span>${ic("clapperboard")} From the demo video check</span>`:`<span>${ic("user")} Added by you</span>`}${h?`<span class="tag">Tests ${h.code}: ${esc(h.criteria[q.k])}</span>`:""}</div>
+        <textarea id="pa-${i}" rows="2" placeholder="Answer heard in the meeting">${esc(q.answer||"")}</textarea>${q.answer?vChecks(checkAnswer(q.answer, null, false, m.entity)):(m.entity==="fernhook"&&FERN_TEST[q.q]?`<button class="linkbtn test-ans" data-act="prep-test" data-m="${mid}" data-i="${i}">${ic("flask-conical")}Insert test answer <span class="fic">Fictional</span></button>`:"")}
         <div class="row wrap" style="gap:6px;margin-top:6px">
           <button class="btn sm" data-act="prep-ans" data-m="${mid}" data-i="${i}">${ic("save")}Save answer</button>
           ${q.answer && h ? (q.logged ? `<span class="pill ${q.logged==="support"?"t-green":"t-amber"}">${ic("check")}Logged to ${h.code} as ${q.logged==="support"?"supporting":"weakening"}</span>`
@@ -2699,6 +3088,7 @@ function sfRenderSingle(s){
       <div class="sf-bl-row"><div class="up"><b>Watch next</b>${f.watch.map(esc).join(" · ")}</div><div class="down"><b>Not verified</b>${esc(f.caveat)}</div></div>
     </div>`}
     ${ddqSec(s)}
+    ${claimsInNews(s)}
     ${fundSec}
     <div class="sf-part"><div class="sf-part-h">Evidence</div>
       ${act?`<section><h4>What to watch next</h4><ul class="sf-bul">${f.watch.map(w=>`<li>${esc(w)}</li>`).join("")}</ul></section>`:""}
@@ -2944,6 +3334,7 @@ const DF = {
   remy:{sector:"Dexterous warehouse robots (e-commerce 3PLs)", hq:"San Francisco, CA", yc:"W26", round:"Not verified (a $650K figure is unsourced)", check:"Not set", val:"Not disclosed", source:"YC Robotics directory", owner:"Priya Shah", priority:"Medium", next:"Internal screen", nextDate:"2026-11-10", since:"2026-11-03", risks:["Overlaps with Ultra","Team of 2; CTO listed as former founder"]},
   darwin:{sector:"Robot technicians for data centers", hq:"San Francisco, CA", yc:"F25", round:"$3.6M pre-seed, Link Ventures (single source)", check:"Not set", val:"Not disclosed", source:"News: RuntimeWire, Nov 6", owner:"Alex Morgan", priority:"High", next:"Partner discussion", nextDate:"2026-11-16", since:"2026-11-06", risks:["Single-source funding report","No customers named"]},
   aktoria:{sector:"Remote human operators for robots", hq:"San Francisco, CA", yc:"S26", round:"Not disclosed (YC only)", check:"Not set", val:"Not disclosed", source:"News: IBTimes, Nov 4", owner:"Priya Shah", priority:"Low", next:"Internal screen", nextDate:"2026-11-11", since:"2026-11-04", risks:["Cost and latency claims unverified","No customers disclosed"]},
+  fernhook:{sector:"Autonomous picking robots for grocery fulfillment", hq:"Oakland, CA (fictional)", yc:"None", round:"Series A claimed; amount conflicts", check:"Not set", val:"Not disclosed", source:"Inbound deck (fictional)", owner:"Alex Morgan", priority:"High", next:"Diligence call", nextDate:"2026-11-13", since:"2026-10-28", risks:["Autonomy claim contradicted by its own case study","Demo video edited"]},
   shiraz:{sector:"Factory robots that learn from one demonstration", hq:"San Francisco, CA", yc:"S26", round:"Not disclosed", check:"Not set", val:"Not disclosed", source:"YC Manufacturing & Robotics directory", owner:"Priya Shah", priority:"Low", next:"Revisit", nextDate:"2026-11-20", since:"2026-11-03", risks:["Almost no public information"]},
   vexo:{sector:"Always-listening AI wristband", hq:"San Francisco, CA", yc:"F26", round:"Y Combinator · Sep 2026", raised:"Not disclosed (only YC confirmed)", lead:"Y Combinator", owner:"Alex Morgan", priority:"High", next:"Partner meeting: D-1", nextDate:"2026-11-17", risks:["Platform competition (Amazon, Apple)","All-party-consent law"]},
   ultra:{sector:"Warehouse packing robots (RaaS)", hq:"Brooklyn, NY", yc:"S24", round:"Series A · Oct 9, 2026", raised:"$62M", lead:"Framework Ventures", owner:"Alex Morgan", priority:"Medium", next:"AI-supplier dependence review", nextDate:"2026-11-12", risks:["One AI supplier (PI)","Per-robot economics undisclosed"]},
@@ -2976,14 +3367,14 @@ function renderDealflow(){
 
 function dfPipeline(){
   const PH = [["Deal flow",[0,1,2],"t-amber","search"],["Diligence & decision",[3,4,5],"t-red","microscope"],["Portfolio",[6,7,8],"t-accent","briefcase"],["Exit",[9],"t-green","door-open"]];
-  const selId = S.dfSel || "darwin";
+  const selId = S.dfSel || "fernhook";
   const sel = PIPELINE.find(r=>r.entity===selId) || PIPELINE[0];
   return `<div class="df-legend"><span class="srcbadge">${ic("plug")}Pipeline synced from Affinity (demo)</span><span>Priority:</span><span><i class="pdot High"></i>High</span><span><i class="pdot Medium"></i>Medium</span><span><i class="pdot Low"></i>Low</span><span>· Click a card for details</span></div><div class="df-grid">
     <div class="kb df-kb">${PH.map(([name,st,tone,icn]) => { const rows = PIPELINE.filter(r => st.includes(pipeStage(r))); return `
       <div class="kb-col"><div class="kb-h"><span class="tile sm ${tone}">${ic(icn)}</span><b>${name}</b><span class="kb-n">${rows.length}</span></div>
       ${rows.length?"":`<p class="xs faint" style="padding:6px 2px">None yet</p>`}${rows.map(r => { const e = meetEntity({kind:r.kind, entity:r.entity}); const f = DF[r.entity]; return `
         <button class="kb-card ${selId===r.entity?"on":""}" data-act="df-sel" data-id="${r.entity}">
-          <span class="row" style="align-items:flex-start"><span class="mk-s" style="background:${e.color}">${e.mk}</span><b style="flex:1;min-width:0">${esc(e.name)}</b></span>
+          <span class="row" style="align-items:flex-start"><span class="mk-s" style="background:${e.color}">${e.mk}</span><b style="flex:1;min-width:0">${esc(e.name)}${e.fictional?` <span class="fic">Fictional</span>`:""}</b></span>
           <span class="kb-stage"><i class="pdot ${f.priority}" title="${f.priority} priority"></i>${STAGES[pipeStage(r)]}</span>
           <span class="kb-f">${esc(f.round)}</span>
           <span class="kb-next">${ic("calendar")}${fmtShort(f.nextDate)} · ${esc(f.next)}</span>
@@ -3004,10 +3395,10 @@ function dfDetail(r){
     : [["Sector",f.sector],["Round",f.round],["Invested",f.check],["Outcome",f.outcome],["Owner",f.owner],["Held",Math.round(days/30)+" months"]];
   const canAdvance = r.kind==="deal" && stg < 5;
   return `<aside class="card df-detail">
-    <div class="row wrap"><span class="mk-s" style="background:${e.color};width:34px;height:34px;font-size:12px;border-radius:9px">${e.mk}</span><div style="min-width:0;flex:1"><b style="font-size:17px">${esc(e.name)}</b><div class="xs muted">${esc(e.sub)}</div></div><span class="pill ${PRI_TONE[f.priority]}">${f.priority} priority</span></div>
+    <div class="row wrap"><span class="mk-s" style="background:${e.color};width:34px;height:34px;font-size:12px;border-radius:9px">${e.mk}</span><div style="min-width:0;flex:1"><b style="font-size:17px">${esc(e.name)}</b>${e.fictional?` <span class="fic">Fictional</span>`:""}<div class="xs muted">${esc(e.sub)}</div></div><span class="pill ${PRI_TONE[f.priority]}">${f.priority} priority</span></div>
     <div class="df-steps">${STAGES.map((st,i)=>`<span class="${i<stg?"done":i===stg?"cur":""}" title="${st}"></span>`).join("")}</div>
     <div class="row" style="justify-content:space-between"><span class="small"><b>${STAGES[stg]}</b> <span class="muted">· stage ${stg+1} of 10</span></span>${canAdvance?`<button class="btn sm" data-act="df-advance" data-id="${r.entity}">Move to ${STAGES[stg+1]} ${ic("arrow-right")}</button>`:""}</div>
-    ${ddqFor(r.entity)}
+    ${ddMini(r.entity)}
     ${S.tasks.some(t=>t.company===r.entity) ? `<div class="lbl" style="margin:10px 0 4px">Tasks for ${esc(e.name)}</div>${taskList(S.tasks.filter(t=>t.company===r.entity))}` : ""}
     <div class="df-next">${ic("calendar-clock")}<div><b>Next: ${esc(f.next)}</b><span class="xs muted">${fmt(f.nextDate)}</span></div>
       ${(() => { const m = ms.find(x=>x.date>=DEMO_TODAY); if(!m||!m.prep) return ""; const added = S.tasks.some(t=>t.title==="Prep: "+m.title); return `<button class="btn sm ${added?"on":""}" data-act="meet-prep" data-id="${m.id}" ${added?"disabled":""}>${ic(added?"check":"list-plus")}${added?"Prep task added":"Prep task"}</button>`; })()}</div>
@@ -3128,7 +3519,7 @@ function renderCompany(c){
     <div class="row1">
       <span class="mk" style="background:${c.color}">${c.mk}</span>
       <div style="min-width:0;flex:1">
-        <div class="row wrap"><h2>${esc(c.name)}</h2><span class="pill t-accent">${esc(c.stage)}</span><span class="pill t-line">YC ${esc(c.yc)}</span><span class="pill t-line">${esc(c.focus)}</span><span class="pill t-amber">Assumed holding</span></div>
+        <div class="row wrap"><h2>${esc(c.name)}</h2><span class="pill t-accent">${esc(c.stage)}</span><span class="pill t-line">YC ${esc(c.yc)}</span><span class="pill t-line">${esc(c.focus)}</span><span class="pill t-amber">Assumed holding</span><span class="sp"></span><button class="btn sm pri" data-act="dd-open" data-c="${c.id}" data-go="1">${ic("folder-open")}DD folder</button></div>
         <div class="sub">${esc(c.desc)}</div>
       </div>
     </div>
@@ -3144,7 +3535,7 @@ function renderCompany(c){
 }
 
 function companyOverview(c){
-  return `
+  return `${ddMini(c.id)}<div style="height:12px"></div>
   <div class="row wrap" style="gap:6px;margin-bottom:8px"><span class="srcbadge">${ic("plug")}Public figures via PitchBook · Crunchbase (demo)</span><span class="srcbadge off">${ic("unplug")}Internal KPIs: connect Standard Metrics</span></div>
   <div class="kpis">${c.kpis.map((k,i) => `<div class="kpi"><span class="tile sm ${KPI_ICON[i][1]}">${ic(KPI_ICON[i][0])}</span><div><div class="v">${esc(k.v)}</div><div class="k">${esc(k.k)}</div><div class="d ${k.tone||""}">${esc(k.d)}</div></div></div>`).join("")}</div>
   <div>
@@ -3427,10 +3818,12 @@ function irQBlock(it){
   return `<div class="ir-q ${a?"done":""}">
     <div class="row" style="align-items:flex-start;gap:8px"><span class="mono xs faint" style="padding-top:2px">Q${it.i+1}</span><b style="flex:1">${esc(it.q)}${it.src&&SHORT[it.src]?`<span class="xs faint" style="display:block;font-weight:400;margin-top:2px">${ic("radar")} From the news: ${esc(SHORT[it.src][0])}</span>`:""}</b>${a?`<span class="pill t-green">${ic("check")}Answered ${fmtShort(a.date)}</span>`:`<span class="pill t-amber">Awaiting reply</span>`}</div>
     ${topics.length || sim.length ? `<div class="ir-tags">${topics.map(t=>`<span class="tag">${esc(t)}</span>`).join("")}${sim.length?`<span class="ai-tag">${ic("sparkles")}Also asked: ${sim.map(o=>esc(INV_NAME[o.inv])+" Q"+(o.i+1)).join(", ")}</span>`:""}</div>` : ""}
-    ${a && !ed ? `<p class="ir-a">${esc(a.text)}</p><button class="linkbtn" data-act="ir-edit" data-k="${it.key}">${ic("pencil")}Edit answer</button>`
+    ${(S.irCheck||{})[it.key] && !(a && !ed) ? `<div class="vchk-box"><div class="lbl">${ic("shield-check")} Pre-send check</div>${vChecks(S.irCheck[it.key])}</div>` : ""}
+    ${a && !ed ? `<p class="ir-a">${esc(a.text)}</p>${vChecks(checkAnswer(a.text, it.key, true))}<button class="linkbtn" data-act="ir-edit" data-k="${it.key}">${ic("pencil")}Edit answer</button>`
       : `${!a && simAns && !draft ? `<div class="reuse"><div class="reuse-h">${ic("sparkles")}<b>AI found a similar answer</b><span class="xs muted">You answered ${esc(INV_NAME[simAns.inv])} Q${simAns.i+1} on ${fmtShort(simAns.ans.date)}</span></div><p class="reuse-t">“${esc(simAns.ans.text)}”</p><button class="btn sm pri" data-act="ir-reuse" data-k="${it.key}" data-from="${simAns.key}">${ic("copy-plus")}Use this answer</button><span class="xs muted" style="margin-left:8px">You can edit before sending.</span></div>` : ""}
         ${!a && !simAns && simOpen.length ? `<p class="xs muted" style="margin:6px 0 0">${ic("info")} Your answer here can be reused for ${simOpen.map(o=>esc(INV_NAME[o.inv])+" Q"+(o.i+1)).join(", ")}.</p>` : ""}
-        <textarea id="${pre}${it.i}" rows="2" placeholder="Write your answer">${esc(a?a.text:(draft||""))}</textarea><div class="row" style="margin-top:6px">${draft&&!a?`<span class="xs ai-note">${ic("sparkles")}Reused answer inserted. Edit if needed.</span>`:""}<span class="sp"></span><button class="btn sm pri" data-act="ir-answer" data-k="${it.key}">${ic("send")}Send to ${esc(INV_NAME[it.inv])}</button></div>`}
+        ${!a && TEST_ANSWERS[it.key] && !draft ? `<button class="linkbtn test-ans" data-act="ir-test" data-k="${it.key}">${ic("flask-conical")}Insert test answer <span class="fic">Test text · not from Vexo</span></button>` : ""}
+        <textarea id="${pre}${it.i}" rows="2" placeholder="Write your answer">${esc(a?a.text:(draft||""))}</textarea><div class="row" style="margin-top:6px">${draft&&!a?(draft===TEST_ANSWERS[it.key]?`<span class="xs"><span class="fic">Test text · not from Vexo</span></span>`:(S.irCheck||{})[it.key]?"":`<span class="xs ai-note">${ic("sparkles")}Reused answer inserted. Edit if needed.</span>`):""}<span class="sp"></span><button class="btn sm" data-act="ir-check" data-k="${it.key}">${ic("shield-check")}Check before sending</button><button class="btn sm pri" data-act="ir-answer" data-k="${it.key}">${ic("send")}Send to ${esc(INV_NAME[it.inv])}</button></div>`}
   </div>`;
 }
 
@@ -3446,10 +3839,10 @@ function renderFounderSide(){
     ${nav("fcal","calendar-check","Calendar & Tasks", openT||"")}
     <div class="side-sec lbl">Tracked topics</div>
     <div class="topic-list">
-      ${S.tracked.map(t => `<button class="nav" data-act="topic-filter" data-topic="${t}" style="height:auto;min-height:32px;padding-block:6px;font-weight:400;font-size:13px;line-height:1.35"><span class="topic-dot" style="background:${TOPICS[t].color}"></span><span class="l">${esc(TOPICS[t].name)}</span></button>`).join("")}
+      ${S.tracked.map(t => `<button class="nav ${route()==="intelligence"&&S.view==="tracker"&&S.trackTopic===t?"on":""}" data-act="topic-filter" data-topic="${t}" style="height:auto;min-height:32px;padding-block:6px;font-weight:400;font-size:13px;line-height:1.35"><span class="topic-dot" style="background:${TOPICS[t].color}"></span><span class="l">${esc(TOPICS[t].name)}</span></button>`).join("")}
     </div>
     <div class="side-foot">
-      <b>${ic("rocket")}Founder view <span class="pill t-violet" style="margin-left:auto">v35</span></b>
+      <b>${ic("rocket")}Founder view <span class="pill t-violet" style="margin-left:auto">v37</span></b>
       <span>Demo role for Vexo. Company facts are public. Metrics, answers and updates you enter stay in this browser.</span>
       <button class="linkbtn" data-act="reset">${ic("rotate-ccw")}Reset demo</button>
     </div>`;
@@ -3635,7 +4028,7 @@ function vcFounderBox(c){
     <div class="sec-h"><h3>From the founder</h3><span class="xs faint">Shared through Investor Relations</span></div>
     <div class="card pad" style="box-shadow:none">
       <div class="row wrap" style="gap:8px;margin-bottom:8px"><span class="pill ${S.ir.sent?"t-blue":"t-line"}">${S.ir.sent?`Questions sent ${fmtShort(S.ir.sent)} · ${ans.length}/${irQs().length} answered`:"No questions sent"}</span><span class="pill t-line">${sh.length} metric${sh.length===1?"":"s"} shared</span><span class="pill t-line">${S.fupdates.length} update${S.fupdates.length===1?"":"s"}</span></div>
-      ${ans.length ? `<ul class="ir-vc">${ans.map(([i,a])=>`<li><div class="xs faint">Q${Number(i)+1} · ${esc(irQs()[i])}</div><div class="small" style="margin:3px 0 6px">${esc(a.text)}</div><button class="btn sm ${logged(i)?"on":""}" data-act="ir-log" data-i="${i}" ${logged(i)?"disabled":""}>${ic(logged(i)?"check":"clipboard-check")}${logged(i)?"Logged to H02":"Log as evidence to H02"}</button></li>`).join("")}</ul>` : `<p class="small muted">No answers yet. Switch to Founder at the top to answer as Vexo in this demo.</p>`}
+      ${ans.length ? `<ul class="ir-vc">${ans.map(([i,a])=>`<li><div class="xs faint">Q${Number(i)+1} · ${esc(irQs()[i])}</div><div class="small" style="margin:3px 0 6px">${esc(a.text)}</div>${vChecks(checkAnswer(a.text, null, false))}<button class="btn sm ${logged(i)?"on":""}" data-act="ir-log" data-i="${i}" ${logged(i)?"disabled":""}>${ic(logged(i)?"check":"clipboard-check")}${logged(i)?"Logged to H02":"Log as evidence to H02"}</button></li>`).join("")}</ul>` : `<p class="small muted">No answers yet. Switch to Founder at the top to answer as Vexo in this demo.</p>`}
       ${sh.length ? `<div class="lbl" style="margin:10px 0 4px">Shared metrics</div><ul class="ud-m">${sh.map(m=>`<li><span>${esc(m.l)}</span><b>${esc(S.fm[m.k].v)}</b></li>`).join("")}</ul>` : ""}
       ${S.fupdates.length ? `<div class="lbl" style="margin:10px 0 4px">Latest update</div><div class="small"><b>${esc(S.fupdates[S.fupdates.length-1].title)}</b> · ${fmtShort(S.fupdates[S.fupdates.length-1].date)}</div>` : ""}
     </div></div>`;
@@ -3816,7 +4209,7 @@ function render(){
   renderSide(); renderTopRight();
   const rt = route();
   $("#main").innerHTML = FROUTES.includes(rt) ? (!founder() ? fLocked() : rt==="company" ? renderMyCompany() : rt==="investors" ? renderInvestors() : rt==="updates" ? renderUpdates() : renderFCal())
-    : rt==="portfolio" ? renderPortfolio() : rt==="dealflow" ? renderDealflow() : renderIntelligence();
+    : rt==="portfolio" ? renderPortfolio() : rt==="dealflow" ? renderDealflow() : rt==="dd" ? renderDD() : renderIntelligence();
   renderOverlay();
   document.body.classList.toggle("detail-open", S.detailOpen && route()==="intelligence");
   document.querySelectorAll("[data-keep]").forEach(el => { if(keep[el.dataset.keep] != null) el.scrollTop = keep[el.dataset.keep]; });
@@ -3858,7 +4251,19 @@ const ACTIONS = {
   "ir-edit": d => { S.irEdit = d.k; render(); },
   "ir-answer": d => { const k = d.k; const inv = k[0]==="m" ? "meridian" : "northline"; const i = Number(k.slice(1)); const el = $("#"+(inv==="meridian"?"ans-":"nans-")+i); const t = el ? el.value.trim() : ""; if(!t){ el?.focus(); return; }
     if(inv==="meridian"){ S.ir.answers[i] = {text:t, date:DEMO_TODAY}; } else { S.ir.nAns = S.ir.nAns || {}; S.ir.nAns[i] = {text:t, date:DEMO_TODAY}; }
-    if(S.irDraft) delete S.irDraft[k]; S.irEdit = null; toast("Answer sent to "+INV_NAME[inv],"send"); render(); },
+    if(S.irDraft) delete S.irDraft[k]; if(S.irCheck) delete S.irCheck[k]; S.irEdit = null; toast("Answer sent to "+INV_NAME[inv],"send"); render(); },
+  "ir-test": d => { S.irDraft = S.irDraft || {}; S.irDraft[d.k] = TEST_ANSWERS[d.k]; render(); },
+  "ir-check": d => { const inv = d.k[0]==="m" ? "ans-" : "nans-"; const el = $("#"+inv+d.k.slice(1)); const t = el ? el.value.trim() : ""; if(!t){ el?.focus(); return; } S.irDraft = S.irDraft || {}; S.irDraft[d.k] = t; S.irCheck = S.irCheck || {}; S.irCheck[d.k] = checkAnswer(t, d.k, true); render(); },
+  "co-verify": d => { S.vOpen = d.id; S.ddCo = d.c; S.ddTab = "claims"; S.modal = null; location.hash === "#dd" ? render() : (location.hash = "dd"); window.scrollTo(0,0); },
+  "dd-open": d => { S.ddCo = d.c; if(d.go){ S.ddTab = "checklist"; S.modal = null; } location.hash === "#dd" ? render() : (location.hash = "dd"); window.scrollTo(0,0); },
+  "dd-tab": d => { S.ddTab = d.v; if(d.id) S.vOpen = d.id; render(); },
+  "dd-filter": d => { S.ddFilter = d.v; render(); },
+  "dd-req": d => { S.ddReq = S.ddReq || {}; S.ddReq[d.c] = S.ddReq[d.c] || {}; S.ddReq[d.c][d.id] = "requested"; const r = DD_STD.find(x=>x.id===d.id);
+    if(d.c===FCO){ S.ir.extra = S.ir.extra || []; const q = "Diligence request: "+r.t; if(!irQs().includes(q)) S.ir.extra.push({q, src:null, date:DEMO_TODAY}); toast("Requested from Vexo through Investor Relations","send"); }
+    else toast("Marked as requested","send"); addLog("Alex Morgan", "Requested "+r.t+" from "+coName(d.c)); render(); },
+  "dd-done": d => { S.ddReq = S.ddReq || {}; S.ddReq[d.c] = S.ddReq[d.c] || {}; S.ddReq[d.c][d.id] = "done"; toast("Marked reviewed","check"); render(); },
+  "dd-goto-co": d => { S.company = d.c; S.tab = "overview"; S.decisionOpen = false; location.hash = "portfolio"; window.scrollTo(0,0); },
+  "dd-goto-df": d => { S.dfSel = d.c; S.dfTab = "pipeline"; location.hash = "dealflow"; window.scrollTo(0,0); },
   "ir-reuse": d => { const from = allIRQ().find(x=>x.key===d.from); S.irDraft = S.irDraft || {}; S.irDraft[d.k] = from.ans.text; toast("Earlier answer inserted. Edit before sending","sparkles"); render(); },
   "ir-answer-old": d => { const i = Number(d.i); const t = ($("#ans-"+i)||{}).value; if(!t || !t.trim()){ $("#ans-"+i)?.focus(); return; } S.ir.answers[i] = {text:t.trim(), date:DEMO_TODAY}; S.irEdit = null; toast("Answer sent to Meridian","send"); render(); },
   "ir-log": d => { const i = Number(d.i); const a = S.ir.answers[i]; S.evidence.h02 = S.evidence.h02 || []; S.evidence.h02.push({id:"EV-f"+i, qi:i, date:a.date, src:"Founder answer · Q"+(i+1), text:a.text, verdict:"neutral", crit:[]}); addLog("Alex Morgan", "Logged founder answer Q"+(i+1)+" to H02"); toast("Logged to H02","clipboard-check"); render(); },
@@ -3870,7 +4275,10 @@ const ACTIONS = {
   focus: d => { S.focus = S.focus===d.v && d.v!=="all" ? "all" : d.v; if(route()!=="intelligence") location.hash="intelligence"; else render(); },
   format: d => { S.format = d.v; render(); },
   window: d => { S.window = d.v; render(); },
-  "topic-filter": d => { S.topicFilter = d.topic || null; S.drawer = null; if(route()!=="intelligence") location.hash = "intelligence"; else render(); },
+  "topic-filter": d => { S.drawer = null;
+    if(d.topic && TRACKERS[d.topic]){ S.topicFilter = null; S.trackTopic = d.topic; S.trackStage = TRACKERS[d.topic].stages.findIndex(x=>x.status==="current"); S.view = "tracker"; S.detailOpen = false; }
+    else S.topicFilter = d.topic || null;
+    if(route()!=="intelligence") location.hash = "intelligence"; else render(); window.scrollTo(0,0); },
   "clear-filters": () => { S.focus="all"; S.format="all"; S.topicFilter=null; S.window="14"; render(); },
   mobile: () => { S.mobileView = true; S.drawer = null; S.modal = null; render(); },
   "mobile-close": () => { S.mobileView = false; try{ sessionStorage.setItem("mm-dismissed","1"); }catch(e){} render(); },
@@ -3917,6 +4325,7 @@ const ACTIONS = {
   "meet-decision": () => { S.drawer = null; S.company = D1.company; S.decisionOpen = true; location.hash === "#portfolio" ? render() : (location.hash = "portfolio"); },
   "prep-add": d => { const pk = ensurePrep(d.m, d.id); (DDQ[d.id]||[]).filter(x=>x.c===d.c).forEach(x => addPrepQ(d.m, Object.assign({src:d.id}, x))); toast(`Added to prep pack · ${pk.qs.length} question${pk.qs.length===1?"":"s"}`,"clipboard-list"); render(); },
   "prep-open": d => { S.drawer = null; prepOf(d.id); S.modal = "prep:"+d.id; render(); },
+  "prep-test": d => { const q = S.prep[d.m].qs[Number(d.i)]; q.answer = FERN_TEST[q.q]; render(); },
   "prep-ans": d => { const q = S.prep[d.m].qs[Number(d.i)]; q.answer = ($("#pa-"+d.i)||{}).value.trim(); toast(q.answer?"Answer saved":"Answer cleared","save"); render(); },
   "prep-log": d => { const m = allMeetings().find(x=>x.id===d.m); const q = S.prep[d.m].qs[Number(d.i)]; S.evidence[q.h] = S.evidence[q.h] || [];
     S.evidence[q.h].push({id:"EV-m"+Date.now().toString(36), date:m.date, src:"Meeting · "+m.title, text:q.q+" → "+q.answer, verdict:d.v, crit: d.v==="support" && q.k!=null ? [q.k] : []});
@@ -3939,7 +4348,7 @@ const ACTIONS = {
   "close-decision": () => { S.decisionOpen = false; render(); },
   "memo": d => { S.modal = "memo:"+d.id; render(); },
   "memo-copy": () => { const el = $("#memoTxt"); const t = el ? el.textContent : ""; const sel = () => { const r = document.createRange(); r.selectNodeContents(el); const g = getSelection(); g.removeAllRanges(); g.addRange(r); toast("Text selected. Press Ctrl/Cmd+C to copy","copy"); }; try{ navigator.clipboard.writeText(t).then(()=>toast("Market section copied","copy"), sel); }catch(e){ sel(); } },
-  "ddq-prep": d => { const m = nextMeetingFor(d.c); if(!m) return; ensurePrep(m.id, d.src||null); const x = Object.values(DDQ).flat().find(y=>y.q===d.q) || {q:d.q}; addPrepQ(m.id, Object.assign({src:d.src||null}, x)); toast("Added to the "+fmtShort(m.date)+" prep pack","clipboard-list"); render(); },
+  "ddq-prep": d => { const m = nextMeetingFor(d.c); if(!m) return; ensurePrep(m.id, (d.src && SHORT[d.src]) ? d.src : null); const x = Object.values(DDQ).flat().find(y=>y.q===d.q) || {q:d.q}; addPrepQ(m.id, Object.assign({src:d.src||null}, x)); toast("Added to the "+fmtShort(m.date)+" prep pack","clipboard-list"); render(); },
   "ddq-send": d => { S.ir.extra = S.ir.extra || []; if(irQs().includes(d.q)) return; S.ir.extra.push({q:d.q, src:d.src||null, date:DEMO_TODAY}); addLog("Alex Morgan", "Sent a question to Vexo from a market signal"); toast("Sent to Vexo’s Investor Relations","send"); render(); },
   "open-doc": d => { S.modal = "doc:"+d.id; render(); },
   questions: () => { S.modal = "questions"; render(); },
